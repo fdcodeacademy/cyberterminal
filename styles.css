@@ -1,0 +1,394 @@
+:root {
+    --terminal-bg: #0a0a12;
+    --terminal-green: #0f0;
+    --terminal-cyan: #0ff;
+    --terminal-purple: #b19cd9;
+    --terminal-red: #f44;
+    --terminal-glow: rgba(0, 255, 0, 0.7);
+    --terminal-border: #333;
+    --text-color: #e0e0e0;
+    --text-shadow: 0 0 8px var(--terminal-glow);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    overflow: hidden;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    perspective: 1000px;
+}
+
+.matrix-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.15;
+}
+
+.terminal-container {
+    position: relative;
+    width: 85%;
+    max-width: 800px;
+    height: 70vh;
+    background: var(--terminal-bg);
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.5),
+        inset 0 0 10px rgba(0, 255, 0, 0.2);
+    overflow: hidden;
+    border: 1px solid var(--terminal-green);
+    transform-style: preserve-3d;
+    animation: float 32s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotateX(8deg) rotateY(3deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotateX(3deg) rotateY(8deg);
+    }
+}
+
+.terminal-header {
+    background: linear-gradient(to right, #0a0a0a, #111);
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--terminal-green);
+    font-family: 'Share Tech Mono', monospace;
+    border-bottom: 1px solid var(--terminal-green);
+    box-shadow: 0 2px 15px rgba(0, 255, 0, 0.3);
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.terminal-button.red {
+    background: #ff5f56;
+}
+
+.terminal-button.yellow {
+    background: #ffbd2e;
+}
+
+.terminal-button.green {
+    background: #27c93f;
+}
+
+.terminal-body {
+    padding: 15px;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+    line-height: 1.6;
+}
+
+.typing-text {
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+}
+
+.command-line {
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    color: var(--terminal-green);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: var(--terminal-green);
+    animation: blink 4s infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.command-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: var(--terminal-green);
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.1rem;
+    outline: none;
+    caret-color: var(--terminal-green);
+    text-shadow: var(--text-shadow);
+}
+
+.glitch {
+    position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--terminal-bg);
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--terminal-red);
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 var(--terminal-cyan);
+    clip: rect(85px, 550px, 140px, 0);
+    animation: glitch-anim-2 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+    0% {
+        clip: rect(54px, 800px, 54px, 0);
+    }
+
+    20% {
+        clip: rect(27px, 800px, 86px, 0);
+    }
+
+    40% {
+        clip: rect(14px, 800px, 75px, 0);
+    }
+
+    60% {
+        clip: rect(39px, 800px, 104px, 0);
+    }
+
+    80% {
+        clip: rect(18px, 800px, 53px, 0);
+    }
+
+    100% {
+        clip: rect(73px, 800px, 112px, 0);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0% {
+        clip: rect(35px, 800px, 89px, 0);
+    }
+
+    20% {
+        clip: rect(56px, 800px, 103px, 0);
+    }
+
+    40% {
+        clip: rect(22px, 800px, 64px, 0);
+    }
+
+    60% {
+        clip: rect(88px, 800px, 120px, 0);
+    }
+
+    80% {
+        clip: rect(13px, 800px, 32px, 0);
+    }
+
+    100% {
+        clip: rect(42px, 800px, 99px, 0);
+    }
+}
+
+.ascii-art {
+    color: var(--terminal-purple);
+    line-height: 1.3;
+    margin: 15px 0;
+    white-space: pre;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+
+.highlight {
+    color: var(--terminal-cyan);
+}
+
+.skill-bar {
+    margin: 8px 0;
+}
+
+.skill-name {
+    display: inline-block;
+    width: 120px;
+    color: var(--terminal-green);
+}
+
+.skill-level {
+    display: inline-block;
+    height: 15px;
+    background: linear-gradient(to right, var(--terminal-green), var(--terminal-cyan));
+    box-shadow: 0 0 5px var(--terminal-glow);
+    animation: expand 1s ease-out;
+    transform-origin: left;
+}
+
+@keyframes expand {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.contact-item {
+    margin: 8px 0;
+}
+
+.contact-item a {
+    color: var(--terminal-purple);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.contact-item a:hover {
+    color: var(--terminal-cyan);
+    text-shadow: 0 0 10px var(--terminal-cyan);
+}
+
+/* Scrollbar styling */
+#terminal-body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--terminal-green) var(--terminal-bg);
+}
+
+#terminal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+#terminal-body::-webkit-scrollbar-track {
+    background: var(--terminal-bg);
+}
+
+#terminal-body::-webkit-scrollbar-thumb {
+    background-color: var(--terminal-green);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--terminal-glow);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Matrix rain effect */
+canvas {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .terminal-container {
+        width: 95%;
+        height: 75vh;
+        font-size: 0.9rem;
+    }
+
+    .terminal-header {
+        padding: 6px 12px;
+        font-size: 0.95rem;
+    }
+
+    .terminal-body {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .command-input {
+        font-size: 1rem;
+    }
+
+    .ascii-art {
+        font-size: 0.5rem;
+        letter-spacing: 0.5px;
+    }
+
+    /* Disable glitch effect for performance on mobile */
+    .glitch::before,
+    .glitch::after {
+        display: none;
+    }
+
+    .skill-name {
+        width: 100px;
+        font-size: 0.85rem;
+    }
+
+    .skill-level {
+        height: 12px;
+    }
+
+    .contact-item a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .terminal-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .terminal-buttons {
+        gap: 6px;
+    }
+
+    .ascii-art {
+        font-size: 0.45rem;
+    }
+
+    .command-input,
+    .prompt {
+        font-size: 0.95rem;
+    }
+}
