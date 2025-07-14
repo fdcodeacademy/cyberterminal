@@ -62,11 +62,14 @@ const resources = {
     2: { label: 'CP Intermediate PDF', link: 'https://drive.google.com/file/d/1Y3WEfcccNms8zY7L74hHKZ6lHM-uJwAh/view' },
     3: { label: 'CP Advanced Resources', link: 'https://drive.google.com/drive/folders/1LGb6n43T-GK_W-QuIBUpQzVFw-MWFO1X' },
     4: { label: 'CFN Learning Modules', link: 'https://drive.google.com/drive/folders/1EZRsbwpZ2bI9U8csVzW-KtRS3c78BFIs' },
-    5: { label: 'PAN Learning Modules', link: 'https://drive.google.com/drive/folders/1ydS_4h7gx-Ql3nA3vB7rvCfkWuNoqk9a' },
-    6: { label: 'PAN Challenge Exercises', link: 'https://example.com' },
-    7: { label: 'PF Learning Modules', link: 'https://drive.google.com/drive/folders/1pi1SiNcdXTkja7K_wld9nqyDTVsL7R5x' },
-    8: { label: 'PF Challenge Exercises', link: 'https://drive.google.com/file/d/1aCKy2OE_hXe4IkiMKopH23Kc1JVq0D6u/view' },
-    9: { label: 'ChromeDino++', link: 'https://fdcodestudio.github.io/collection-showcase/ai-app/gesture-chrome-dino' }
+    5: { label: 'CFN Challenge Exercises', link: 'https://example.com' },
+    6: { label: 'PFN Learning Modules', link: 'https://drive.google.com/drive/folders/1LnyOg3oMTYOeR8tWh3yK-DQEsvR3yKMK' },
+    7: { label: 'PFN Challenge Exercises', link: 'https://drive.google.com/file/d/14iCiOyJXF2w-AqdjA2EHFgPFSbsqOgMz/view' },
+    8: { label: 'PAN Learning Modules', link: 'https://drive.google.com/drive/folders/1ydS_4h7gx-Ql3nA3vB7rvCfkWuNoqk9a' },
+    9: { label: 'PAN Challenge Exercises', link: 'https://drive.google.com/file/d/1SRiyKZP4Ob_nHQKX9REc62xFSJnFRvOP/view' },
+    10: { label: 'PF Learning Modules', link: 'https://drive.google.com/drive/folders/1pi1SiNcdXTkja7K_wld9nqyDTVsL7R5x' },
+    11: { label: 'PF Challenge Exercises', link: 'https://drive.google.com/file/d/1aCKy2OE_hXe4IkiMKopH23Kc1JVq0D6u/view' },
+    12: { label: 'ChromeDino++', link: 'https://fdcodestudio.github.io/collection-showcase/ai-app/gesture-chrome-dino' }
 };
 
 const messages = [
@@ -78,15 +81,19 @@ const messages = [
     { text: "> [02] CP Intermediate PDF \n" },
     { text: "> [03] CP Advanced Resources \n\n" },
     { text: ">> P VII | Computer Fundamental National (CFN) << \n", style: "color: #b19cd9; text-decoration: underline" },
-    { text: "> [04] CFN Learning Modules \n\n" },
+    { text: "> [04] CFN Learning Modules \n" },
+    { text: "> [05] CFN Challenge Exercises \n\n" },
+    { text: ">> P VIII | Programming Fundamental National (PFN) << \n", style: "color: #b19cd9; text-decoration: underline" },
+    { text: "> [06] PFN Learning Modules \n" },
+    { text: "> [07] PFN Challenge Exercises \n\n" },
     { text: ">> P IX | Programming Advanced National (PAN) << \n", style: "color: #b19cd9; text-decoration: underline" },
-    { text: "> [05] PAN Learning Modules \n" },
-    { text: "> [06] PAN Challenge Exercises \n\n" },
+    { text: "> [08] PAN Learning Modules \n" },
+    { text: "> [09] PAN Challenge Exercises \n\n" },
     { text: ">> VIII | Programming Fundamental (PF) << \n", style: "color: #b19cd9; text-decoration: underline" },
-    { text: "> [07] PF Learning Modules \n" },
-    { text: "> [08] PF Challenge Exercises \n\n" },
+    { text: "> [10] PF Learning Modules \n" },
+    { text: "> [11] PF Challenge Exercises \n\n" },
     { text: ">> Bonus << \n", style: "color: #b19cd9; text-decoration: underline" },
-    { text: "> [09] ChromeDino++ \n\n" },
+    { text: "> [12] ChromeDino++ \n\n" },
     { text: "> Type 'help' for available commands \n\n", style: "color: #0f0" },
 ];
 
