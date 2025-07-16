@@ -62,14 +62,18 @@ const resources = {
     2: { label: 'CP Intermediate PDF', link: 'https://drive.google.com/file/d/1Y3WEfcccNms8zY7L74hHKZ6lHM-uJwAh/view' },
     3: { label: 'CP Advanced Resources', link: 'https://drive.google.com/drive/folders/1LGb6n43T-GK_W-QuIBUpQzVFw-MWFO1X' },
     4: { label: 'CFN Learning Modules', link: 'https://drive.google.com/drive/folders/1EZRsbwpZ2bI9U8csVzW-KtRS3c78BFIs' },
-    5: { label: 'CFN Challenge Exercises', link: 'https://example.com' },
-    6: { label: 'PFN Learning Modules', link: 'https://drive.google.com/drive/folders/1LnyOg3oMTYOeR8tWh3yK-DQEsvR3yKMK' },
-    7: { label: 'PFN Challenge Exercises', link: 'https://drive.google.com/file/d/14iCiOyJXF2w-AqdjA2EHFgPFSbsqOgMz/view' },
-    8: { label: 'PAN Learning Modules', link: 'https://drive.google.com/drive/folders/1ydS_4h7gx-Ql3nA3vB7rvCfkWuNoqk9a' },
-    9: { label: 'PAN Challenge Exercises', link: 'https://drive.google.com/file/d/1SRiyKZP4Ob_nHQKX9REc62xFSJnFRvOP/view' },
-    10: { label: 'PF Learning Modules', link: 'https://drive.google.com/drive/folders/1pi1SiNcdXTkja7K_wld9nqyDTVsL7R5x' },
-    11: { label: 'PF Challenge Exercises', link: 'https://drive.google.com/file/d/1aCKy2OE_hXe4IkiMKopH23Kc1JVq0D6u/view' },
-    12: { label: 'ChromeDino++', link: 'https://fdcodestudio.github.io/collection-showcase/ai-app/gesture-chrome-dino' }
+    5: { label: 'CFN Homework Submission', link: 'https://example.com' },
+    6: { label: 'CFN Challenge Exercises', link: 'https://example.com' },
+    7: { label: 'PFN Learning Modules', link: 'https://drive.google.com/drive/folders/1LnyOg3oMTYOeR8tWh3yK-DQEsvR3yKMK' },
+    8: { label: 'PFN Homework Submission', link: 'https://drive.google.com/drive/folders/1LnyOg3oMTYOeR8tWh3yK-DQEsvR3yKMK' },
+    9: { label: 'PFN Challenge Exercises', link: 'https://drive.google.com/file/d/14iCiOyJXF2w-AqdjA2EHFgPFSbsqOgMz/view' },
+    10: { label: 'PAN Learning Modules', link: 'https://drive.google.com/drive/folders/1ydS_4h7gx-Ql3nA3vB7rvCfkWuNoqk9a' },
+    11: { label: 'PAN Homework Submission', link: 'https://drive.google.com/drive/folders/1ydS_4h7gx-Ql3nA3vB7rvCfkWuNoqk9a' },
+    12: { label: 'PAN Challenge Exercises', link: 'https://drive.google.com/file/d/1SRiyKZP4Ob_nHQKX9REc62xFSJnFRvOP/view' },
+    13: { label: 'PF Learning Modules', link: 'https://drive.google.com/drive/folders/1pi1SiNcdXTkja7K_wld9nqyDTVsL7R5x' },
+    14: { label: 'PF Homework Submission', link: 'https://forms.gle/FrWedbE9K2HJQPJD8' },
+    15: { label: 'PF Challenge Exercises', link: 'https://drive.google.com/file/d/1aCKy2OE_hXe4IkiMKopH23Kc1JVq0D6u/view' },
+    16: { label: 'ChromeDino++', link: 'https://fdcodestudio.github.io/collection-showcase/ai-app/gesture-chrome-dino' }
 };
 
 const messages = [
@@ -82,18 +86,22 @@ const messages = [
     { text: "> [03] CP Advanced Resources \n\n" },
     { text: ">> P VII | Computer Fundamental National (CFN) << \n", style: "color: #b19cd9; text-decoration: underline" },
     { text: "> [04] CFN Learning Modules \n" },
-    { text: "> [05] CFN Challenge Exercises \n\n" },
+    { text: "> [05] CFN Homework Submission \n" },
+    { text: "> [06] CFN Challenge Exercises \n\n" },
     { text: ">> P VIII | Programming Fundamental National (PFN) << \n", style: "color: #b19cd9; text-decoration: underline" },
-    { text: "> [06] PFN Learning Modules \n" },
-    { text: "> [07] PFN Challenge Exercises \n\n" },
+    { text: "> [07] PFN Learning Modules \n" },
+    { text: "> [08] PFN Homework Submission \n" },
+    { text: "> [09] PFN Challenge Exercises \n\n" },
     { text: ">> P IX | Programming Advanced National (PAN) << \n", style: "color: #b19cd9; text-decoration: underline" },
-    { text: "> [08] PAN Learning Modules \n" },
-    { text: "> [09] PAN Challenge Exercises \n\n" },
+    { text: "> [10] PAN Learning Modules \n" },
+    { text: "> [11] PAN Homework Submission \n" },
+    { text: "> [12] PAN Challenge Exercises \n\n" },
     { text: ">> VIII | Programming Fundamental (PF) << \n", style: "color: #b19cd9; text-decoration: underline" },
-    { text: "> [10] PF Learning Modules \n" },
-    { text: "> [11] PF Challenge Exercises \n\n" },
+    { text: "> [13] PF Learning Modules \n" },
+    { text: "> [14] PF Homework Submission \n" },
+    { text: "> [15] PF Challenge Exercises \n\n" },
     { text: ">> Bonus << \n", style: "color: #b19cd9; text-decoration: underline" },
-    { text: "> [12] ChromeDino++ \n\n" },
+    { text: "> [16] ChromeDino++ \n\n" },
     { text: "> Type 'help' for available commands \n\n", style: "color: #0f0" },
 ];
 
@@ -118,7 +126,10 @@ const commands = {
 
     about: () => {
         terminalText.innerHTML += `<span style="color: #0f0">SYSTEM USER PROFILE</span>
-<span class="highlight">CyberTerminal</span> is crafted by <span class="highlight">@frederic_davidsen</span> :)`;
+<span class="highlight">CyberTerminal</span> is crafted by <span class="highlight">@frederic_davidsen</span>
+
+Have questions or need help with the exercises?
+Reach me on WhatsApp: <a href="https://wa.me/6282362361344" target="_blank" style="color:#0ff">0823 6236 1344</a>`;
     },
 
     clear: () => {
