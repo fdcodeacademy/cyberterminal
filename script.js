@@ -68,11 +68,11 @@ const resources = {
     8: { label: 'PFN Learning Modules', link: 'https://drive.google.com/drive/folders/1LnyOg3oMTYOeR8tWh3yK-DQEsvR3yKMK' },
     9: { label: 'PFN Challenge Exercises', link: 'https://drive.google.com/file/d/14iCiOyJXF2w-AqdjA2EHFgPFSbsqOgMz/view' },
     10: { label: 'PFN Homework Submission', link: 'https://forms.gle/2beqcotGLjTcWVAw8' },
-    11: { label: 'PFN Project Submission', link: 'https://example.com' },
+    11: { label: 'PFN Project Submission', link: 'https://forms.gle/6QJLwADa6Y1BkkfMA' },
     12: { label: 'PAN Learning Modules', link: 'https://drive.google.com/drive/folders/1ydS_4h7gx-Ql3nA3vB7rvCfkWuNoqk9a' },
     13: { label: 'PAN Challenge Exercises', link: 'https://drive.google.com/file/d/1SRiyKZP4Ob_nHQKX9REc62xFSJnFRvOP/view' },
     14: { label: 'PAN Homework Submission', link: 'https://forms.gle/aunHPMmtGbZT89Ai9' },
-    15: { label: 'PAN Project Submission', link: 'https://example.com' },
+    15: { label: 'PAN Project Submission', link: 'https://forms.gle/N2zui3YGPimDeirP7' },
     16: { label: 'PF Learning Modules', link: 'https://drive.google.com/drive/folders/1pi1SiNcdXTkja7K_wld9nqyDTVsL7R5x' },
     17: { label: 'PF Challenge Exercises', link: 'https://drive.google.com/file/d/1aCKy2OE_hXe4IkiMKopH23Kc1JVq0D6u/view' },
     18: { label: 'PF Homework Submission', link: 'https://forms.gle/FrWedbE9K2HJQPJD8' },
@@ -273,3 +273,4 @@ document.addEventListener('keydown', () => {
 window.addEventListener('load', () => {
     typeNextCharacter();
 });
+
