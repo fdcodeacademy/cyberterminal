@@ -74,7 +74,7 @@ const resources = {
     14: { label: 'CFN Challenge Exercises', link: 'https://example.com' },
     15: { label: 'PF Learning Modules', link: 'https://drive.google.com/drive/folders/1pi1SiNcdXTkja7K_wld9nqyDTVsL7R5x' },
     16: { label: 'PF Challenge Exercises (Semester Ganjil)', link: 'https://drive.google.com/file/d/1aCKy2OE_hXe4IkiMKopH23Kc1JVq0D6u/view' },
-    17: { label: 'PF Challenge Exercises (Semester Genap)', link: 'https://example.com' },
+    17: { label: 'PF Challenge Exercises (Semester Genap)', link: 'https://drive.google.com/file/d/1Nl0IlPudFt8HoMWnVo1Nzn4n7emq-1zU/view' },
 };
 
 const messages = [
@@ -267,3 +267,4 @@ document.addEventListener('keydown', () => {
 window.addEventListener('load', () => {
     typeNextCharacter();
 });
+
