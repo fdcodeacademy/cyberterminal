@@ -71,7 +71,7 @@ const resources = {
     11: { label: 'PFN Challenge Exercises (Semester Ganjil)', link: 'https://drive.google.com/file/d/14iCiOyJXF2w-AqdjA2EHFgPFSbsqOgMz/view' },
     12: { label: 'PFN Challenge Exercises (Semester Genap)', link: 'https://drive.google.com/file/d/1YgbJphWaeVkjzojtWuYGfyVNqlrnUZDM/view' },
     13: { label: 'CFN Learning Modules', link: 'https://drive.google.com/drive/folders/1EZRsbwpZ2bI9U8csVzW-KtRS3c78BFIs' },
-    14: { label: 'CFN Challenge Exercises', link: 'https://example.com' },
+    14: { label: 'CFN Challenge Exercises', link: 'https://drive.google.com/file/d/1dGWkplanEBDzOAMq5YujehTV2uag-GQj/view' },
     15: { label: 'PF Learning Modules', link: 'https://drive.google.com/drive/folders/1pi1SiNcdXTkja7K_wld9nqyDTVsL7R5x' },
     16: { label: 'PF Challenge Exercises (Semester Ganjil)', link: 'https://drive.google.com/file/d/1aCKy2OE_hXe4IkiMKopH23Kc1JVq0D6u/view' },
     17: { label: 'PF Challenge Exercises (Semester Genap)', link: 'https://drive.google.com/file/d/1Nl0IlPudFt8HoMWnVo1Nzn4n7emq-1zU/view' },
@@ -267,4 +267,5 @@ document.addEventListener('keydown', () => {
 window.addEventListener('load', () => {
     typeNextCharacter();
 });
+
 
